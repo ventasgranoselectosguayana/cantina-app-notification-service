@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "scripts": {
+    "build": "babel ./src --out-dir ./build",
+    "dev": "nodemon ./src/server.js --exec babel-node",
+    "start": "node ./build/server.js"
+  },
+  "keywords": [],
+  "author": "Carlos Peláez",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "firebase-admin": "^12.7.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.8",
+    "@babel/node": "^7.25.7",
+    "@babel/preset-env": "^7.25.8",
+    "nodemon": "^3.1.7"
+  }
+}
